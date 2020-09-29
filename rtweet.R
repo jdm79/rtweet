@@ -10,13 +10,17 @@ library(dplyr)
 # whatever name you assigned to your created app
 appname <- ""
 
-## api key (example below is not a real key)
+## api key
 key <- ""
 
-## api secret (example below is not a real key)
+## api secret 
 secret <- ""
 
+## You can reset these tokens below and they will display again
+## api access_token
 access_token = ""
+
+## api__access_token_secret
 access_secret = ""
 
 # create token named "twitter_token"
@@ -30,7 +34,5 @@ twitter_token <- create_token(
 ## get user IDs of accounts followed by CNN
 week <- get_timeline("NicolasMaduro",
                      token = twitter_token,
-                     n = 3200
-)
-
-  
+                     n = 3200)
+                     
