@@ -31,8 +31,7 @@ twitter_token <- create_token(
   access_token = access_token,
   access_secret = access_secret)
 
-## get user IDs of accounts followed by CNN
+## get the last 3,200 tweets
 week <- get_timeline("NicolasMaduro",
                      token = twitter_token,
                      n = 3200)
-                     
