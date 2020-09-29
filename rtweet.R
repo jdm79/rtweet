@@ -35,3 +35,6 @@ twitter_token <- create_token(
 week <- get_timeline("NicolasMaduro",
                      token = twitter_token,
                      n = 3200)
+
+cor <- week %>% 
+            filter(created_at > "2020-07-18" & created_at <"2020-07-25")
